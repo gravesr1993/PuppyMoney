@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-kjdi*o+%t-+_e2+r%_h6tr31q1$i(85@78&wknvthld2)6b0ji
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost','52.8.213.54']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'puppymoney.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'puppymoney',
+        'USER': 'admin',
+        'PASSWORD':'password',
+        'HOST':'localhost',
+        'PORT':''
     }
 }
 
