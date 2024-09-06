@@ -74,17 +74,26 @@ WSGI_APPLICATION = 'puppymoney.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'puppymoney',
+#         'USER': 'admin',
+#         'PASSWORD':'password',
+#         'HOST':'localhost',
+#         'PORT':''
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'puppymoney',
-        'USER': 'admin',
-        'PASSWORD':'password',
-        'HOST':'localhost',
-        'PORT':''
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'HhIt05x7nUM4n0tUMyhp',
+        'HOST': 'database-1.c4byiz2e2bre.us-west-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
